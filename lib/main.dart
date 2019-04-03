@@ -3,6 +3,7 @@ import 'package:contacts_service/contacts_service.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'dart:math';
 
+/// The Indefinite Glove, lets you delete half your contacts at random.
 void main() => runApp(App());
 
 class App extends StatelessWidget {
@@ -43,11 +44,11 @@ class _HomePageState extends State<HomePage> {
       if (contacts.isNotEmpty) {
         var half = (contacts.length ~/ 2);
         var rng = new Random();
-        var toSnap = new Set<int>();
-        while (toSnap.length <= half) {
-          toSnap.add(rng.nextInt(contacts.length - 1));
+        var toPurge = new Set<int>();
+        while (toPurge.length <= half) {
+          toPurge.add(rng.nextInt(contacts.length - 1));
         }
-        toSnap.forEach(
+        toPurge.forEach(
             (item) => ContactsService.deleteContact(contacts.elementAt(item)));
       }
     }
