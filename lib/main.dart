@@ -4,6 +4,7 @@ import 'package:permission_handler/permission_handler.dart';
 import 'dart:math';
 
 /// The Indefinite Glove, lets you delete half your contacts at random.
+/// Author: https://github.com/Thaid
 void main() => runApp(App());
 
 class App extends StatelessWidget {
