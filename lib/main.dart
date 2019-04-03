@@ -92,13 +92,13 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(bottom: 16),
+              padding: EdgeInsets.only(bottom: 8),
               child: const Text(
-                  "The hardest choices require the strongest wills."),
+                  "\"The hardest choices require the strongest wills.\"\n\n- Purpleman"),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 16, right: 16),
-              child: RaisedButton(
+              padding: EdgeInsets.only(left: 16, right: 16, top: 8),
+              child: FlatButton(
                 onPressed: _showWarningDialog,
                 child: Image(image: AssetImage("assets/images/the_glove.png")),
               ),
