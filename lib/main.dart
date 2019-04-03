@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text("Are you sure you want to snap your contacts?"),
+          title: const Text("Are you sure you want to purge your contacts?"),
           content:
               const Text("Half of your contacts will be deleted at random"),
           actions: <Widget>[
