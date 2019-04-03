@@ -43,11 +43,11 @@ class _HomePageState extends State<HomePage> {
       var contacts = await ContactsService.getContacts();
 
       if (contacts.isNotEmpty) {
-        var half = (contacts.length ~/ 2);
+        final half = (contacts.length ~/ 2);
         var rng = new Random();
         var toPurge = new Set<int>();
         while (toPurge.length <= half) {
-          toPurge.add(rng.nextInt(contacts.length - 1));
+          toPurge.add(rng.nextInt((contacts.length - 1).abs()));
         }
         toPurge.forEach(
             (item) => ContactsService.deleteContact(contacts.elementAt(item)));
