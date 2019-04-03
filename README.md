@@ -1,17 +1,2 @@
-# indefinite_glove
-
-Purge your contacts list
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
-# indefinite-glove
+# The Indefinite Glove
+The -Infinity Gauntet- Indefinite Glove, not to be confused with another undefined glove, lets you purge half your contacts list at random.
